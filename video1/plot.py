@@ -51,8 +51,8 @@ def main(dataset):
     coverage = [int(entry[0]) for entry in dataset]
     frequency = [int(entry[1]) for entry in dataset]
 
-    start = detect_start(frequency) - 10
-    end = detect_end(frequency) + 10
+    start = detect_start(frequency)
+    end = detect_end(frequency)
     coverage = coverage[start:end]
     frequency = frequency[start:end]
     
